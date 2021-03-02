@@ -27,10 +27,14 @@
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+    
 }
 
-nav{
-    text-decoration: none;
+nav div{
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .nyheter_bokomslag{
