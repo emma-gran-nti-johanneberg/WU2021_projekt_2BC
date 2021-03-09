@@ -1,5 +1,11 @@
+body{
+    margin: 0px;
+}
+
 #wrapper{
-    background-color: aqua;
+    margin: 0px;
+    background-color: #1c3334;
+    color: white;
     display: grid;
     grid-template-areas: 
     "he"
@@ -9,18 +15,27 @@
     "fo"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px auto auto auto auto 200px;
+    grid-template-rows: 200px auto auto auto auto 100px;
+}
+
+#wrapper h1{
+    font-size: 50px;
+}
+
+#wrapper h2{
+    font-size:xx-large;
 }
 
 .header{
-    background-color: lavender;
+    background-color: #2e151b;
     grid-area: he;
 }
 
 .menu{
     height: 100vh;
     width: 60vw;
-    background: hotpink;
+    background: #da7b93;
+    color: black;
     position: fixed;
     top: 0;
     left: -90vw;
@@ -41,8 +56,6 @@ nav div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
 }
 
 
@@ -78,9 +91,47 @@ nav div{
     display: block;
 }
 
+.main_portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding: 30px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
 
+.natur_foto{
+    column-gap: 10px;
+    row-gap: 10px;
+}
 
-.main_nyheter{
+.natur_foto img{
+    width: 100%;
+    height: auto;
+}
+
+.surealistiskt{
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.surealistiskt img{
+    width: 100%;
+    height: auto;
+}
+
+.vinter_foton{
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.vinter_foton img{
+    width: 100%;
+    height: auto;
+}
+
+.main_nyheter img{
     background-color: lightgreen;
     grid-area: bo;
     display: flex;
@@ -89,8 +140,26 @@ nav div{
     justify-content: space-around;
 }
 
+.om_mig_main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about{
+    background-color: #206162;
+    height: 500px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.about p{
+    size: 50px;
+}
+
 .footer{
-    background-color: lightpink;
+    background-color: #2e151b;
     grid-area: fo;
 }
 
@@ -106,4 +175,54 @@ nav div{
     .menu-button{
         display: block;
     }
+    .main_portfolio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        padding: 20px;
+    }
+    
+    .natur_foto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+    .natur_foto img{
+        width: 40vw;
+        height: auto;
+    }
+    
+    .surealistiskt{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+    .surealistiskt img{
+        width: 40vw;
+        height: auto;
+    }
+
+    .vinter_foton{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    
+    .vinter_foton img{
+        width: 40vw;
+        height: auto;
+    }
+
 }
