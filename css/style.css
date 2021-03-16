@@ -29,12 +29,20 @@ body{
 .header{
     background-color: #2e151b;
     grid-area: he;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header img{
+    height: 105px;
 }
 
 .menu{
     height: 100vh;
     width: 60vw;
-    background: #da7b93;
+    background: #DE8CA1;
     color: black;
     position: fixed;
     top: 0;
@@ -45,12 +53,25 @@ body{
     
 }
 
-nav div{
+.main_bok{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.bild_mareld img{
+    width: 45%;
+    height: auto;
+}
+
+
+.hamburgare{
     text-decoration-line: none;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
 }
+
 
 .nyheter_bokomslag{
     display: flex;
@@ -129,6 +150,11 @@ nav div{
 .vinter_foton img{
     width: 100%;
     height: auto;
+}
+
+.main_nyheter{
+    padding: 20px;
+    margin-left: 10px;
 }
 
 .main_nyheter img{
@@ -223,6 +249,47 @@ nav div{
     .vinter_foton img{
         width: 40vw;
         height: auto;
+    }
+
+    .main_bok{
+        display: grid;
+        grid-template-areas: 
+        "ob bm"
+        "kl bl"
+        "kl kl"
+        "kp bp"
+        "kp kp"
+        "ko bo"
+        "ko ko"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .main_bok img{
+        height: 250px;
+    }
+
+    .om_bok{
+        grid-area: ob;
+        display: block;
+    }
+
+    .bild_mareld {
+        grid-area: bm;
+        display: block;
+    }
+
+    .bild_mareld img{
+        width: 40%;
+        height: auto;
+    }
+
+    .chacter_leija{
+        grid-area: kl;
+    }
+    .bild_leija{
+        grid-area: bl;
     }
 
 }
