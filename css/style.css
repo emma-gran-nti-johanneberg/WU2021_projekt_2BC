@@ -9,9 +9,9 @@ body{
     display: grid;
     grid-template-areas: 
     "he"
-    "bo"
-    "bo"
-    "bo"
+    "ma"
+    "ma"
+    "ma"
     "fo"
     ;
     grid-template-columns: 1fr;
@@ -33,10 +33,15 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin: 0px;   
+}
+
+.header div{
+    margin: 5px;
 }
 
 .header img{
-    height: 105px;
+    height: 115px;
 }
 
 .menu{
@@ -64,14 +69,32 @@ body{
     height: auto;
 }
 
+.main_index{
+    grid-area: ma;
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.main_index img{
+    width: auto;
+    height: 600px;
+    padding: 10px;
+    float: right;
+}
 
 .hamburgare{
-    text-decoration-line: none;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
+.hamburgare a{
+    text-decoration: none;
+}
 
 .nyheter_bokomslag{
     display: flex;
@@ -159,7 +182,7 @@ body{
 
 .main_nyheter img{
     background-color: lightgreen;
-    grid-area: bo;
+    grid-area: ma;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -252,14 +275,15 @@ body{
     }
 
     .main_bok{
+        grid-area: ma;
         display: grid;
         grid-template-areas: 
         "ob bm"
-        "kl bl"
         "kl kl"
-        "kp bp"
+        "kl kl"
         "kp kp"
-        "ko bo"
+        "kp kp"
+        "ko ko"
         "ko ko"
         ;
         grid-template-columns: 1fr 1fr;
@@ -272,12 +296,16 @@ body{
 
     .om_bok{
         grid-area: ob;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
     }
 
     .bild_mareld {
         grid-area: bm;
         display: block;
+        padding: 20px;
     }
 
     .bild_mareld img{
