@@ -280,9 +280,7 @@ body{
     }
     
     .header{
-        padding: 80px;
-        padding left: 90px;
-        padding-right: 90px;
+        padding: 100px;
     }
 
     .header h1{
@@ -292,7 +290,7 @@ body{
     .header img{
         width: 255px;
         height: auto;
-        padding: 20px;
+        padding-left: 100px;
     }
 
     .main_index{
@@ -376,6 +374,11 @@ body{
         align-content: space-around;
         padding: 20px;
     }
+
+    .main_portfolio h2{
+        padding-left: 50px;
+    }
+    
     
     .natur_foto{
         display: flex;
