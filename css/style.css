@@ -57,7 +57,7 @@ body{
 
 .menu{
     height: 100%;
-    width: 60vw;
+    width: 30vw;
     background: #2e151b;
     color: black;
     position: fixed;
@@ -90,7 +90,7 @@ body{
   
     /* selected link */
     a:active {
-    color: #DE8CA1;
+    color: #E390A5;
     }
 
 
@@ -256,17 +256,13 @@ body{
     margin: 20px;
 }
 
-.about p{
-    size: 50px;
-}
-
 .footer{
     background-color: #DE8CA1;
     color: black;
     grid-area: fo;
-    padding-left: 50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 25px;
 
 }
@@ -362,8 +358,9 @@ body{
         grid-template-areas: 
         "om bi"
         ;
-        grid-template-columns: 375px, auto;
+        grid-template-columns: 375px auto;
         grid-template-rows: 600px;
+        gap: 45px;
     }
 
     .about{
@@ -372,7 +369,7 @@ body{
         height: 500px;
         width: 350px;
         padding: 10px;
-        margin: 20px;
+        margin: 40px;
     }
     
     .profile{
@@ -382,7 +379,7 @@ body{
 
     .profile img{
         width: auto;
-        height: 500px;
+        height: 515px;
     }
 
     .main_portfolio{
